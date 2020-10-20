@@ -3,7 +3,7 @@
   
 <head>
     <meta charset="utf-8">
-    <title>Account - Bootstrap Admin Template</title>
+    <title>Garrick - AIS</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">    
@@ -57,8 +57,8 @@
   <div class="subnavbar-inner">
     <div class="container">
       <ul class="mainnav">
-        <li><a href="index.html"><i class="icon-dashboard"></i><span>AIS - Index</span> </a> </li>
-        <li class="active"><a href="upload.html"><i class="icon-list-alt"></i><span>Upload Information</span> </a> </li>
+        <li><a href="./"><i class="icon-dashboard"></i><span>AIS - Index</span> </a> </li>
+        <li class="active"><a href="./upload"><i class="icon-list-alt"></i><span>Upload Information</span> </a> </li>
 <!--        <li><a href="guidely.html"><i class="icon-facetime-video"></i><span>App Tour</span> </a></li>-->
 <!--        <li><a href="charts.html"><i class="icon-bar-chart"></i><span>Charts</span> </a> </li>-->
         <li><a href=""><i class="icon-code"></i><span>Comments</span> </a> </li>
@@ -97,27 +97,27 @@
 						
 							<div class="tab-content">
 								<div class="tab-pane active" id="formcontrols">
-								<form id="edit-profile" class="form-horizontal">
+								<form id="edit-profile" class="form-horizontal" action="./submit" method="post">
 									<fieldset>
 										
 										<div class="control-group">											
 											<label class="control-label" for="university">学校名称（简写）</label>
 											<div class="controls">
-												<input type="text" class="span6" id="university" value="">
+												<input type="text" class="span6" name="university" id="university" value="">
 											</div> <!-- /controls -->				
 										</div> <!-- /control-group -->
 
 										<div class="control-group">
 											<label class="control-label" for="program">项目名称</label>
 											<div class="controls">
-												<input type="text" class="span6" id="program" value="">
+												<input type="text" class="span6" name="program" id="program" value="">
 											</div> <!-- /controls -->
 										</div> <!-- /control-group -->
 
 										<div class="control-group">
 											<label class="control-label" for="program_index">项目主页</label>
 											<div class="controls">
-												<input type="text" class="span6" id="program_index" value="">
+												<input type="text" class="span6" name="program_index" id="program_index" value="">
 											</div> <!-- /controls -->
 										</div> <!-- /control-group -->
 										
@@ -125,42 +125,42 @@
 										<div class="control-group">
 											<label class="control-label" for="apply">网申系统</label>
 											<div class="controls">
-												<input type="text" class="span6" id="apply" value="">
+												<input type="text" class="span6" name="apply" id="apply" value="">
 											</div> <!-- /controls -->
 										</div> <!-- /control-group -->
 
 										<div class="control-group">
 											<label class="control-label" for="start">申请开始时间</label>
 											<div class="controls">
-												<input type="date" class="span4" id="start" value="">
+												<input type="date" class="span4" name="start" id="start" value="">
 											</div> <!-- /controls -->
 										</div> <!-- /control-group -->
 
 										<div class="control-group">
 											<label class="control-label" for="end">申请截止时间</label>
 											<div class="controls">
-												<input type="date" class="span4" id="end" value="">
+												<input type="date" class="span4" name="end" id="end" value="">
 											</div> <!-- /controls -->
 										</div> <!-- /control-group -->
 
 										<div class="control-group">
 											<label class="control-label" for="language">TOEFL / IELTS / OTHERS</label>
 											<div class="controls">
-												<input type="text" class="span4" id="language" value="">
+												<input type="text" class="span4" name="language" id="language" value="">
 											</div> <!-- /controls -->
 										</div> <!-- /control-group -->
 
 										<div class="control-group">
 											<label class="control-label" for="require">GRE / GMAT</label>
 											<div class="controls">
-												<input type="text" class="span4" id="require" value="">
+												<input type="text" class="span4" name="require" id="require" value="">
 											</div> <!-- /controls -->
 
 										</div> <!-- /control-group -->
 										<div class="control-group">
 											<label class="control-label" for="recommend">Recommended Requirement</label>
 											<div class="controls">
-												<input type="text" class="span4" id="recommend" value="">
+												<input type="text" class="span4" name="recommend" id="recommend" value="">
 											</div> <!-- /controls -->
 										</div> <!-- /control-group -->
 											
@@ -168,8 +168,9 @@
 										
 											
 										<div class="form-actions">
+<!--											<input type="submit" class="btn btn-primary" value="upload">-->
 											<button type="submit" class="btn btn-primary">Upload</button>
-											<button class="btn">Return</button>
+											<button class="btn" onclick="window.location.href='../'">Return</button>
 										</div> <!-- /form-actions -->
 									</fieldset>
 								</form>

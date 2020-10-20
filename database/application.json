@@ -1,0 +1,26 @@
+{
+    "UCSD": [
+        {
+            "program": "Computer Engineering (CS76)",
+            "index": "https://apply.grad.ucsd.edu/areas-of-study/jacobs-school-of-engineering#computer-engineering-cs76",
+            "apply": "https://connect.grad.ucsd.edu/apply/",
+            "language": "TOEFL:85 IELTS:7.0",
+            "other": "GRE recommended",
+            "recommend": "无",
+            "start": "2020-09-09",
+            "end": "2020-12-16"
+        }
+    ],
+    "CMU": [
+        {
+            "program": "test",
+            "index": "test",
+            "apply": "test",
+            "language": "TOEFL 100",
+            "other": "GRE 320",
+            "recommend": "wu ",
+            "start": "2020-01-25",
+            "end": "2020-02-28"
+        }
+    ]
+}
